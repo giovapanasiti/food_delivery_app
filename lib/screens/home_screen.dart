@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_delivery_ui/widgets/nearby_restaurants.dart';
 import 'package:flutter_food_delivery_ui/widgets/recent_orders.dart';
 import 'package:flutter_food_delivery_ui/widgets/search_bar.dart';
 import 'package:flutter_food_delivery_ui/data/data.dart';
@@ -32,7 +33,8 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         children: <Widget>[
           SearchBar(),
-          RecentOrders()
+          RecentOrders(),
+          NearbyRestaurants()
         ],
       ),
     );
