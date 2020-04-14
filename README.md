@@ -1,6 +1,18 @@
 # flutter_food_delivery_ui
 
-A new Flutter project.
+A Flutter project for demo purposes to build a food delivery app.
+
+### Screenshots:
+#### Home screen:
+![Home](/screenshots/home.png)
+
+#### Details screen:
+![Details](/screenshots/details.png)
+
+#### Cart screen:
+![Cart](/screenshots/cart.png)
+
+
 
 ## Getting Started
 
