@@ -62,7 +62,7 @@ class RecentOrders extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          Container( // button
             margin: EdgeInsets.only(right: 20.0),
             width: 48.0,
             decoration: BoxDecoration(
