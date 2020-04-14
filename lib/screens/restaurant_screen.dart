@@ -26,7 +26,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                   image: AssetImage(menuItem.imageUrl), fit: BoxFit.cover),
               borderRadius: BorderRadius.circular(15.0)),
         ),
-        Container( // gradient overlay
+        Container(
+          // gradient overlay
           height: 175.0,
           width: 175.0,
           decoration: BoxDecoration(
@@ -71,20 +72,19 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
           ),
         ),
         Positioned(
-          bottom: 10.0,
-          right: 10.0,
-          child: Container(
-            decoration: BoxDecoration(
-              color: Theme.of(context).primaryColor,
-              borderRadius: BorderRadius.circular(30.0),
-            ),
-            child: IconButton(
-                icon: Icon(Icons.add),
-                iconSize: 30.0,
-                color: Colors.white,
-                onPressed: () {}),
-          )
-        )
+            bottom: 10.0,
+            right: 10.0,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).primaryColor,
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              child: IconButton(
+                  icon: Icon(Icons.add),
+                  iconSize: 30.0,
+                  color: Colors.white,
+                  onPressed: () {}),
+            ))
       ],
     ));
   }

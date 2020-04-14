@@ -62,7 +62,8 @@ class RecentOrders extends StatelessWidget {
               ],
             ),
           ),
-          Container( // button
+          Container(
+            // button
             margin: EdgeInsets.only(right: 20.0),
             width: 48.0,
             decoration: BoxDecoration(
@@ -97,7 +98,8 @@ class RecentOrders extends StatelessWidget {
         Container(
           height: 120.0,
           child: ListView.builder(
-              physics: BouncingScrollPhysics(), // on android devices is not default the bouncing effect
+              physics:
+                  BouncingScrollPhysics(), // on android devices is not default the bouncing effect
               padding: EdgeInsets.only(left: 10.0),
               scrollDirection: Axis.horizontal,
               itemCount: currentUser.orders.length,

@@ -19,7 +19,8 @@ class RestaurantRow extends StatelessWidget {
         children: <Widget>[
           ClipRRect(
             borderRadius: BorderRadius.circular(15.0),
-            child: Hero( //wrapping both images in the hero widget and giving both of them the same tag will make it animate
+            child: Hero(
+              //wrapping both images in the hero widget and giving both of them the same tag will make it animate
               tag: restaurant.imageUrl, //we need a unique id to animate it
               child: Image(
                   width: 150.0,

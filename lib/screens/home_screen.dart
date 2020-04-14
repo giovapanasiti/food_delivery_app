@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_delivery_ui/screens/cart_screen.dart';
 import 'package:flutter_food_delivery_ui/widgets/nearby_restaurants.dart';
 import 'package:flutter_food_delivery_ui/widgets/recent_orders.dart';
 import 'package:flutter_food_delivery_ui/widgets/search_bar.dart';
@@ -26,16 +27,15 @@ class _HomeScreenState extends State<HomeScreen> {
               'Cart (${currentUser.cart.length})',
               style: TextStyle(color: Colors.white, fontSize: 20.0),
             ),
-            onPressed: () {},
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => CartScreen()),
+            ),
           )
         ],
       ),
       body: ListView(
-        children: <Widget>[
-          SearchBar(),
-          RecentOrders(),
-          NearbyRestaurants()
-        ],
+        children: <Widget>[SearchBar(), RecentOrders(), NearbyRestaurants()],
       ),
     );
   }
